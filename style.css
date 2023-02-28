@@ -42,7 +42,7 @@ h1 {
   stroke: black;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 35rem) {
   #rocket-path,
   #star-left-1-path,
   /* #star-left-2-path, */
