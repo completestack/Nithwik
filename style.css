@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  position: fixed;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10vh;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+#star-svg {
+  position: fixed;
+  bottom: 5%;
+  height: 80%;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#rocket-path,
+#star-left-1-path,
+#star-left-2-path,
+#shooting-star-path,
+#star-right-1-path,
+#star-right-2-path,
+#mars-path,
+#saturn-path,
+#engineering-sports-path,
+#biology-path,
+#chemistry-path,
+#boxing-path {
+  display: none;
+  stroke: black;
+}
+
+@media screen and (min-width: 400px) {
+  #rocket-path,
+  #star-left-1-path,
+  /* #star-left-2-path, */
+  #shooting-star-path,
+  #star-right-1-path,
+  #star-right-2-path,
+  #mars-path,
+  #saturn-path,
+  #engineering-sports-path,
+  #biology-path,
+  #chemistry-path,
+  #boxing-path {
+    display: block;
+  }
+
+  #star-svg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
