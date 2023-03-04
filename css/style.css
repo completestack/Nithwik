@@ -16,6 +16,8 @@ h1 {
   font-size: 10vh;
   letter-spacing: 5px;
   font-weight: 100;
+  margin: 0.67em 0;
+  user-select: none;
 }
 
 #star-svg {
@@ -43,6 +45,10 @@ h1 {
 }
 
 @media screen and (min-width: 35rem) {
+  h1 {
+    margin: 0.5em 0;
+  }
+
   #rocket-path,
   #star-left-1-path,
   /* #star-left-2-path, */
