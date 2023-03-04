@@ -63,7 +63,8 @@
     svgColorables = $("g#scene", svgObject).children();
     title = $(".title");
 
-    $(window).on("click", svgRandom);
+    window.addEventListener("click", svgRandom, false);
+    window.addEventListener("touchstart", svgRandom, false);
   }
 
   function getRandomColor() {
@@ -71,7 +72,12 @@
     return colors[randomNum];
   }
 
-  function svgRandom() {
+  function svgRandom(event) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
     $(svgColorables).each(function () {
       TweenMax.to(this, fillSpeed, { fill: getRandomColor() });
     });
