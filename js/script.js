@@ -61,14 +61,9 @@
   function initialize() {
     svgObject = $("#star-svg");
     svgColorables = $("g#scene", svgObject).children();
-    // paintButton = $("path#nithu-path", svgObject);
-    // resetButton = $("path#astronomy-path", svgObject);
     title = $(".title");
 
     $(window).on("click", svgRandom);
-    $(window).on("double-click", svgClear);
-    // paintButton.on("click", svgRandom);
-    // resetButton.on("click", svgClear);
   }
 
   function getRandomColor() {
